@@ -1,7 +1,7 @@
 <html>
 
 	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-
+	<div id="translate"></div>
 	<body>
 		<h1>Design</h1>The RTSJ comprises seven areas of extended semantics. This chapter introduces the extensions. Further detail, exact requirements, and rationale are given in the opening section of each relevant chapter. The seven areas are discussed in approximate order of their relevance to real-time programming. However, the semantics and mechanisms of each of the areas&#151;scheduling, memory management, synchronization, asynchronous event handling, asynchronous transfer of control, asynchronous thread termination, and physical memory access&#151;are all crucial to the acceptance of the RTSJ as a viable real-time development platform.<h2>Scheduling</h2>
 		One of the concerns of real-time programming is to ensure the timely or predictable execution of sequences of machine instructions. Various scheduling schemes name these sequences of instructions differently. Typically used names include threads, tasks, modules, and blocks. The RTSJ introduces the concept of a <i>schedulable object. </i>These are the objects that the base scheduler manages, <code>RealtimeThread</code> and its subclasses and <code>AsyncEventHandler</code> and its subclasses.<br>
@@ -96,5 +96,10 @@
 		<h2>Exceptions</h2>
 		The RTSJ introduces several new exceptions, and some new treatment of exceptions surrounding asynchronous transfer of control and memory allocators.
 	</body>
-
+	<script src="https://res.zvo.cn/translate/translate.js"></script>
+	<script>
+		translate.setUseVersion2(); //设置使用v2.x 版本
+		translate.language.setLocal('english'); //设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
+		translate.execute();//进行翻译
+	</script>
 </html>

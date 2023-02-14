@@ -1,7 +1,7 @@
 <html>
 
 	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-
+	<div id="translate"></div>
 	<body>
 		<h1>Requirements and Conventions</h1>
 		<p>The base requirements of this specification are:</p>
@@ -109,5 +109,10 @@
 		<p>The term <code>Schedulable</code> object is distinct from the term<i> schedulable object</i> (SO). Every object that implements the <code>Schedulable</code> interface can be termed a <code>Schedulable</code> object, but only objects that are recognized as dispatchable entities by the base scheduler are <i>schedulable objects</i> with respect to that scheduler. The base scheduler's set of schedulable objects comprises instances of <code>RealtimeThread </code>and <code>AsyncEventHandler</code>. Other schedulers may support a different set of schedulable objects, but this specification only defines the behavior of the base scheduler so the term schedulable object should be understood as &quot;schedulable by the base scheduler.&quot;</p>
 		<p></p>
 	</body>
-
+	<script src="https://res.zvo.cn/translate/translate.js"></script>
+	<script>
+		translate.setUseVersion2(); //设置使用v2.x 版本
+		translate.language.setLocal('english'); //设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
+		translate.execute();//进行翻译
+	</script>
 </html>

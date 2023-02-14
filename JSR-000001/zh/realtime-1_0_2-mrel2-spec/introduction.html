@@ -1,7 +1,7 @@
 <html>
 
 	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-
+	<div id="translate"></div>
 	<body>
 		<h1>Introduction</h1>
 		<p>The Real-Time for Java Expert Group (RTJEG), convened under the Java Community Process and JSR-000001, was given the responsibility of producing a specification for extending <i>The Java Language Specification</i> and <i>The Java Virtual Machine Specification</i> and of providing an Application Programming Interface that will enable the creation, verification, analysis, execution, and management of Java threads whose correctness conditions include timeliness constraints (also known as real-time threads). This introduction describes the guiding principles that the RTJEG created and used during their work, a description of the real-time Java requirements developed under the auspices of The National Institute for Standards and Technology (NIST), and a brief, high-level description of each of the seven areas identified as requiring enhancements to accomplish the Expert Group's goals.</p>
@@ -30,5 +30,10 @@
 		<p><b>Asynchronous Thread Termination:</b> Again, due to the sometimes drastic and asynchronous changes in the real-world, application logic may need to arrange for a real-time Java thread to expeditiously and safely transfer its control to its outermost scope and thus end in a normal manner. Note that unlike the traditional, unsafe, and deprecated Java mechanism for stopping threads, the RTSJ's mechanism for asynchronous event handling and transfer of control is safe.</p>
 		<p><b>Physical Memory Access:</b> Although not directly a real-time issue, physical memory access is desirable for many of the applications that could productively make use of an implementation of the RTSJ. We thus define a class that allows programmers byte-level access to physical memory as well as a class that allows the construction of objects in physical memory.</p>
 	</body>
-
+	<script src="https://res.zvo.cn/translate/translate.js"></script>
+	<script>
+		translate.setUseVersion2(); //设置使用v2.x 版本
+		translate.language.setLocal('english'); //设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
+		translate.execute();//进行翻译
+	</script>
 </html>
